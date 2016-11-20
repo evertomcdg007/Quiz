@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Quiz</string>
+
+    <!--initiActivity-->
+    <string name="information">Informe seu nome.</string>
+    <string name="go">Iniciar quiz</string>
+    <string name="nick_name">Digite aqui.</string>
+
+    <!--resultActivity-->
+    <string name="correct">Acertou</string>
+    <string name="result">%1$s você acertou %2$d questões de 5.</string>
+    <string name="player">Player</string>
+    <string name="resultTotal">perguntas de um total de 5.</string>
+
+    <!--Questions-->
+    <string name="question1">Essa bandeira pertence a qual pais?</string>
+    <string name="question2">Essa cena pertence a qual filme?</string>
+    <string name="question3">Qual o verdadeiro nome da atriz Alerquina, que atuou no filme Esquadrão Suicída?</string>
+    <string name="question4">Qual país localiza-se este monumento?</string>
+    <string name="question5">Pelo sua experiência diga quem é esse Pokemon?</string>
+
+
+    <string-array name="items_question1">
+        <item>Rússia</item>
+        <item>Sérvia e Montenegro</item>
+        <item>Paraguai</item>
+        <item>Holanda</item>
+        <item>Itália</item>
+    </string-array>
+
+    <string-array name="items_question2">
+        <item>Homem de Ferro 2</item>
+        <item>Homem de Ferro 3</item>
+        <item>Os vingadores 1</item>
+        <item>Os vingadores 2</item>
+        <item>Capitão América - Guerra Civil</item>
+    </string-array>
+
+    <string-array name="items_question3">
+        <item>Margot Kidder</item>
+        <item>Margot Bittencourt</item>
+        <item>Margot Robbie</item>
+        <item>Margot Meyer</item>
+        <item>Margot Kinna</item>
+    </string-array>
+
+    <string-array name="items_question4">
+        <item>Espanha</item>
+        <item>Suiça</item>
+        <item>França</item>
+        <item>Austrália</item>
+        <item>Inglaterra</item>
+    </string-array>
+
+    <string-array name="items_question5">
+        <item>Wartortle</item>
+        <item>Artortle</item>
+        <item>Squirtle</item>
+        <item>Squirtow</item>
+        <item>Wartotow</item>
+    </string-array>
+
+</resources>

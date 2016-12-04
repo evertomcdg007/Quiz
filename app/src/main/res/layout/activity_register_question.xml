@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_question"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    tools:context="com.example.evertocastro.quizappgo.activities.RegisterQuestionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_normal"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/text_margin"
+        android:padding="@dimen/text_padding"
+        android:text="@string/register"/>
+
+    <EditText
+        android:id="@+id/image_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/image"
+        android:padding="@dimen/text_padding"
+        android:layout_margin="@dimen/text_margin"
+        android:inputType="textUri"/>
+
+    <EditText
+        android:id="@+id/question_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="@string/question"
+        android:layout_margin="@dimen/text_margin"
+        android:padding="@dimen/text_padding"/>
+
+    <EditText
+        android:id="@+id/item1_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/item1"
+        android:layout_margin="@dimen/text_margin"
+        android:padding="@dimen/text_padding"/>
+
+    <EditText
+        android:id="@+id/item2_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/item2"
+        android:layout_margin="@dimen/text_margin"
+        android:padding="@dimen/text_padding"/>
+
+    <EditText
+        android:id="@+id/item3_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/item3"
+        android:layout_margin="@dimen/text_margin"
+        android:padding="@dimen/text_padding"/>
+
+    <EditText
+        android:id="@+id/item4_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/item4"
+        android:layout_margin="@dimen/text_margin"
+        android:padding="@dimen/text_padding"/>
+
+    <Spinner
+        android:id="@+id/item_correct_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:padding="@dimen/text_padding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/text_padding"
+            android:text="@string/save"/>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

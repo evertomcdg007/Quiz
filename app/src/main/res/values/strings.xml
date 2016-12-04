@@ -5,11 +5,17 @@
     <string name="information">Informe seu nome.</string>
     <string name="go">Iniciar quiz</string>
     <string name="nick_name">Digite aqui.</string>
-
+    <string name="player">Jogador--></string>
+    <string name="nick_name_required">Preencha o campo com seu nick name</string>
+    <string name="create_question">Cadastrar perguntas</string>
+    <string name="list_question">Listar perguntas</string>
+    <!--gameActivity-->
+    <string name="next_question">Prepare-se para a próxima pergunta</string>
+    <string name="correct_answer">Certa Resposta!</string>
+    <string name="wrong_answer">Desculpe, resposta errada!</string>
     <!--resultActivity-->
     <string name="correct">Acertou</string>
-    <string name="result">%1$s você acertou %2$d questões de 5.</string>
-    <string name="player">Player</string>
+    <string name="result">%1$s você acertou %2$d questões de %3$d.</string>
     <string name="resultTotal">perguntas de um total de 5.</string>
 
     <!--Questions-->
@@ -19,7 +25,20 @@
     <string name="question4">Qual país localiza-se este monumento?</string>
     <string name="question5">Pelo sua experiência diga quem é esse Pokemon?</string>
 
+    <!--registerActivity-->
+    <string name="register">Preencha os campos abaixo</string>
+    <string name="image">URL da imagem</string>
+    <string name="question">Digite aqui a pergunta</string>
+    <string name="item1">Digite item 1</string>
+    <string name="item2">Digite item 2</string>
+    <string name="item3">Digite item 3</string>
+    <string name="item4">Digite item 4</string>
+    <string name="itemCorrect">Digite o número do item correto</string>
+    <string name="save">Salvar</string>
+    <string name="field_empty">Todos os campos são obrigatórios</string>
+    <string name="saveSuccess">Pergunta salva com sucesso.</string>
 
+    <!--items_question-->
     <string-array name="items_question1">
         <item>Rússia</item>
         <item>Sérvia e Montenegro</item>
@@ -58,6 +77,20 @@
         <item>Squirtle</item>
         <item>Squirtow</item>
         <item>Wartotow</item>
+    </string-array>
+
+    <string-array name="option_spinner">
+        <item>Fácil</item>
+        <item>Médio</item>
+        <item>Difícil</item>
+    </string-array>
+
+    <string-array name="item_correct_spinner">
+        <item>Selecione o item da resposta certa</item>
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
     </string-array>
 
 </resources>

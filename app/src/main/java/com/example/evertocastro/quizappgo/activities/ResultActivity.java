@@ -1,17 +1,15 @@
-package com.example.evertocastro.quizappgo;
+package com.example.evertocastro.quizappgo.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.evertocastro.quizappgo.R;
+import com.example.evertocastro.quizappgo.util.Constant;
+
 public class ResultActivity extends AppCompatActivity {
 
-    TextView testTextView;
-    TextView playerTextView;
     TextView resultTextView;
-
-    static final String RESULT = "result";
-    static final String PLAYER = "player";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +18,11 @@ public class ResultActivity extends AppCompatActivity {
         initView();
 
         Bundle b = getIntent().getExtras();
-        int result = b.getInt(RESULT);
-        String player = b.getString(PLAYER);
+        int result = b.getInt(Constant.KEY_RESULT);
+        String player = b.getString(Constant.KEY_PLAYER);
+        int category = b.getInt(Constant.KEY_SPINNER);
 
-        resultTextView.setText(getString(R.string.result, player, result));
+        resultTextView.setText(getString(R.string.result, player, result, category*5));
 
     }
 

@@ -10,32 +10,34 @@ import android.widget.TextView;
 import com.example.evertocastro.quizappgo.R;
 
 /**
- * Created by Everto Castro on 04/12/2016.
+ * Created by Everto Castro on 03/12/2016.
  */
 
-public class GameActivityAdapter extends RecyclerView.Adapter<GameActivityAdapter.MyViewHolder>{
+public class DetailQuestionAdapter extends RecyclerView.Adapter<DetailQuestionAdapter.MyViewHolder>{
 
-    private String items[];
-    private View.OnClickListener mListener;
-    public GameActivityAdapter(String items[], View.OnClickListener mListener){
+    private String items[] = new String[4];
+    int itemCorrect;
+    public DetailQuestionAdapter(String items[], int itemCorrect) {
         this.items = items;
-        this.mListener = mListener;
+        this.itemCorrect = itemCorrect;
     }
 
     @Override
-    public GameActivityAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public DetailQuestionAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_question, parent, false);
-        return new GameActivityAdapter.MyViewHolder(view);
+        return new DetailQuestionAdapter.MyViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(GameActivityAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(DetailQuestionAdapter.MyViewHolder holder, int position) {
         String item = items[position];
         String numberItem = String.valueOf(position+1);
-        holder.cardView.setTag(position);
         holder.numberTextView.setText(numberItem);
-        holder.cardView.setOnClickListener(mListener);
         holder.itemTextView.setText(item);
+
+        if(itemCorrect == position){
+            holder.cardView.setBackgroundResource(R.color.green);
+        }
 
     }
 
@@ -49,12 +51,12 @@ public class GameActivityAdapter extends RecyclerView.Adapter<GameActivityAdapte
         TextView numberTextView;
         TextView itemTextView;
         CardView cardView;
-
         MyViewHolder(View view){
             super(view);
             numberTextView = (TextView) view.findViewById(R.id.number_question);
             itemTextView = (TextView) view.findViewById(R.id.item_question);
             cardView = (CardView) view.findViewById(R.id.item_cardView);
+
         }
 
 

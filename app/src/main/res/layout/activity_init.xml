@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:orientation="vertical"
     android:gravity="center_horizontal">
 
@@ -17,8 +15,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/text_init"
-        android:text="@string/information" />
+        android:text="@string/information"
+        android:textSize="@dimen/text_init" />
 
     <EditText
         android:id="@+id/name_edit_text"
@@ -27,15 +25,49 @@
         android:layout_margin="@dimen/activity_horizontal_margin"
         android:hint="@string/nick_name" />
 
+    <Spinner
+        android:id="@+id/option_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin" />
+
     <Button
         android:id="@+id/go_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/activity_horizontal_margin"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_margin="@dimen/activity_horizontal_margin"
         android:background="@android:color/holo_red_light"
         android:textColor="@android:color/white"
-
         android:text="@string/go"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/create_question_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_light"
+            android:textColor="@android:color/white"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="@string/create_question"/>
+
+        <Button
+            android:id="@+id/list_question_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:background="@android:color/holo_red_light"
+            android:textColor="@android:color/white"
+            android:text="@string/list_question"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+
 
 </LinearLayout>

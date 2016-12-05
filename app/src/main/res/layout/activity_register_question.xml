@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_register_question"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_margin="@dimen/activity_horizontal_margin"
-    tools:context="com.example.evertocastro.quizappgo.activities.RegisterQuestionActivity">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="@dimen/text_margin"
         android:orientation="vertical">
 
     <TextView
@@ -23,59 +21,92 @@
         android:padding="@dimen/text_padding"
         android:text="@string/register"/>
 
-    <EditText
-        android:id="@+id/image_editText"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/image"
-        android:padding="@dimen/text_padding"
-        android:layout_margin="@dimen/text_margin"
-        android:inputType="textUri"/>
+        android:layout_marginTop="4dp">
+        <EditText
+            android:id="@+id/image_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/image"
+            android:padding="@dimen/text_padding"
+            android:layout_margin="@dimen/text_margin"
+            android:inputType="textUri"/>
+    </android.support.design.widget.TextInputLayout>
 
-    <EditText
-        android:id="@+id/question_editText"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:hint="@string/question"
-        android:layout_margin="@dimen/text_margin"
-        android:padding="@dimen/text_padding"/>
+        android:layout_marginTop="4dp">
+        <EditText
+            android:id="@+id/question_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="55"
+            android:inputType="textMultiLine"
+            android:hint="@string/question"
+            android:layout_margin="@dimen/text_margin"
+            android:padding="@dimen/text_padding"/>
+    </android.support.design.widget.TextInputLayout>
 
-    <EditText
-        android:id="@+id/item1_editText"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="@string/item1"
-        android:layout_margin="@dimen/text_margin"
-        android:padding="@dimen/text_padding"/>
+        android:layout_marginTop="4dp">
+        <EditText
+            android:id="@+id/item1_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/item1"
+            android:layout_margin="@dimen/text_margin"
+            android:padding="@dimen/text_padding"/>
 
-    <EditText
-        android:id="@+id/item2_editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="@string/item2"
-        android:layout_margin="@dimen/text_margin"
-        android:padding="@dimen/text_padding"/>
+    </android.support.design.widget.TextInputLayout>
 
-    <EditText
-        android:id="@+id/item3_editText"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="@string/item3"
-        android:layout_margin="@dimen/text_margin"
-        android:padding="@dimen/text_padding"/>
+        android:layout_marginTop="4dp">
+        <EditText
+            android:id="@+id/item2_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/item2"
+            android:layout_margin="@dimen/text_margin"
+            android:padding="@dimen/text_padding"/>
 
-    <EditText
-        android:id="@+id/item4_editText"
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="@string/item4"
-        android:layout_margin="@dimen/text_margin"
-        android:padding="@dimen/text_padding"/>
+        android:layout_marginTop="4dp">
+        <EditText
+            android:id="@+id/item3_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/item3"
+            android:layout_margin="@dimen/text_margin"
+            android:padding="@dimen/text_padding"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+        <EditText
+            android:id="@+id/item4_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/item4"
+            android:layout_margin="@dimen/text_margin"
+            android:padding="@dimen/text_padding"/>
+    </android.support.design.widget.TextInputLayout>
 
     <Spinner
         android:id="@+id/item_correct_editText"

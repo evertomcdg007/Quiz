@@ -22,7 +22,7 @@ public class ResultActivity extends AppCompatActivity {
         String player = b.getString(Constant.KEY_PLAYER);
         int category = b.getInt(Constant.KEY_SPINNER);
 
-        resultTextView.setText(getString(R.string.result, player, result, category*5));
+        resultTextView.setText(getString(R.string.result, player, result, category));
 
     }
 

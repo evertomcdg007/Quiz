@@ -9,10 +9,19 @@
     <string name="nick_name_required">Preencha o campo com seu nick name</string>
     <string name="create_question">Cadastrar perguntas</string>
     <string name="list_question">Listar perguntas</string>
+
+    <string-array name="option_spinner">
+        <item>Fácil</item>
+        <item>Médio</item>
+        <item>Difícil</item>
+    </string-array>
+
     <!--gameActivity-->
     <string name="next_question">Prepare-se para a próxima pergunta</string>
     <string name="correct_answer">Certa Resposta!</string>
     <string name="wrong_answer">Desculpe, resposta errada!</string>
+    <string name="info">Por favor volte para tela inicial e registre algumas perguntas.</string>
+
     <!--resultActivity-->
     <string name="correct">Acertou</string>
     <string name="result">%1$s você acertou %2$d questões de %3$d.</string>
@@ -37,53 +46,6 @@
     <string name="save">Salvar</string>
     <string name="field_empty">Todos os campos são obrigatórios</string>
     <string name="saveSuccess">Pergunta salva com sucesso.</string>
-
-    <!--items_question-->
-    <string-array name="items_question1">
-        <item>Rússia</item>
-        <item>Sérvia e Montenegro</item>
-        <item>Paraguai</item>
-        <item>Holanda</item>
-        <item>Itália</item>
-    </string-array>
-
-    <string-array name="items_question2">
-        <item>Homem de Ferro 2</item>
-        <item>Homem de Ferro 3</item>
-        <item>Os vingadores 1</item>
-        <item>Os vingadores 2</item>
-        <item>Capitão América - Guerra Civil</item>
-    </string-array>
-
-    <string-array name="items_question3">
-        <item>Margot Kidder</item>
-        <item>Margot Bittencourt</item>
-        <item>Margot Robbie</item>
-        <item>Margot Meyer</item>
-        <item>Margot Kinna</item>
-    </string-array>
-
-    <string-array name="items_question4">
-        <item>Espanha</item>
-        <item>Suiça</item>
-        <item>França</item>
-        <item>Austrália</item>
-        <item>Inglaterra</item>
-    </string-array>
-
-    <string-array name="items_question5">
-        <item>Wartortle</item>
-        <item>Artortle</item>
-        <item>Squirtle</item>
-        <item>Squirtow</item>
-        <item>Wartotow</item>
-    </string-array>
-
-    <string-array name="option_spinner">
-        <item>Fácil</item>
-        <item>Médio</item>
-        <item>Difícil</item>
-    </string-array>
 
     <string-array name="item_correct_spinner">
         <item>Selecione o item da resposta certa</item>

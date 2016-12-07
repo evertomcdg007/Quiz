@@ -9,10 +9,6 @@ import android.widget.TextView;
 
 import com.example.evertocastro.quizappgo.R;
 
-/**
- * Created by Everto Castro on 04/12/2016.
- */
-
 public class GameActivityAdapter extends RecyclerView.Adapter<GameActivityAdapter.MyViewHolder>{
 
     private String items[];

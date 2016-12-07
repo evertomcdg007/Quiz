@@ -9,14 +9,10 @@ import android.widget.TextView;
 
 import com.example.evertocastro.quizappgo.R;
 
-/**
- * Created by Everto Castro on 03/12/2016.
- */
-
 public class DetailQuestionAdapter extends RecyclerView.Adapter<DetailQuestionAdapter.MyViewHolder>{
 
     private String items[] = new String[4];
-    int itemCorrect;
+    private int itemCorrect;
     public DetailQuestionAdapter(String items[], int itemCorrect) {
         this.items = items;
         this.itemCorrect = itemCorrect;

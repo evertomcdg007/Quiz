@@ -16,11 +16,11 @@ import java.util.List;
 
 public class ListQuestionActivity extends AppCompatActivity {
 
-    private RecyclerView recyclerView;
-    private ListQuestionAdapter listQuestionAdapter;
-    private DBQuestion dbQuestion;
-    private List<Question> listQuestion;
-    private View.OnClickListener mListener;
+    RecyclerView recyclerView;
+    ListQuestionAdapter listQuestionAdapter;
+    DBQuestion dbQuestion;
+    List<Question> listQuestion;
+    View.OnClickListener mListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +30,6 @@ public class ListQuestionActivity extends AppCompatActivity {
         startView();
 
     }
-
-
-
 
     private void startView() {
         recyclerView = (RecyclerView) findViewById(R.id.list_recyclerView);
@@ -53,10 +50,6 @@ public class ListQuestionActivity extends AppCompatActivity {
         listQuestionAdapter = new ListQuestionAdapter(listQuestion, mListener);
         recyclerView.setAdapter(listQuestionAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-
-
-
 
     }
 }

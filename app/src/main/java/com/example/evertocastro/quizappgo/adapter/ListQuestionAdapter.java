@@ -12,10 +12,6 @@ import com.example.evertocastro.quizappgo.models.Question;
 
 import java.util.List;
 
-/**
- * Created by Everto Castro on 03/12/2016.
- */
-
 public class ListQuestionAdapter extends RecyclerView.Adapter<ListQuestionAdapter.MyViewHolder> {
 
 

@@ -1,9 +1,8 @@
 package com.example.evertocastro.quizappgo.activities;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -62,7 +61,7 @@ public class RegisterQuestionActivity extends AppCompatActivity {
                 if(!image.equals("") && !question.equals("") && !item1.equals("")&& !item2.equals("") &&
                         !item3.equals("") && !item4.equals("") && itemCorrect != 0){
 
-                    Question q = new Question(image, question, item1, item2, item3, item4, itemCorrectSpinner.getSelectedItemPosition());
+                    Question q = new Question(image, question, item1, item2, item3, item4, itemCorrect-1);
                     dbQuestion.addQuestion(q);
 
                     imageEditText.setText("");

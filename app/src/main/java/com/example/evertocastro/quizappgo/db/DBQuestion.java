@@ -11,10 +11,6 @@ import com.example.evertocastro.quizappgo.models.Question;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Everto Castro on 27/11/2016.
- */
-
 public class DBQuestion extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 1;
